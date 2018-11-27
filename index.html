@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-		<head>
-				<meta charset="utf-8">
-				<title>HTML Academy: Техномарт</title>
-		</head>
-		<body>
-				<header class="main-header">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Техномарт</title>
+	</head>
+	<body>
+		<header class="main-header">
 			<a class="main-header-logo">
 				<img src="img/logo.svg" width="111" height="18" alt="Логотип Техномарта">
 			</a>
@@ -22,7 +22,7 @@
 				</p>
 			<nav class="main-navigation">
 				<ul class="user-navigation">
-					<li><a class="button" href="#">Войти</a></li>
+					<li><a class="button" href="login.html">Войти</a></li>
 					<li><a class="button" href="#">Регистрация</a></li>
 				</ul>
 				<ul class="site-navigation">
@@ -58,7 +58,33 @@
 					заехав в наш офис:
 					<img src="img/navigation.jpg" width="300" height="158" alt="Карта">
 				</p>
-				<a class="button" href="#">Заблудились? Напишите нам!</a>
+				<div class="map-popup">
+					<img src="img/map-popup.jpg" width="970" height="476" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+					<button class="modal-close" type="button">
+						Закрыть
+					</button>
+				</div>
+				<button><a class="button" href="#">Заблудились? Напишите нам!</a></button>
+				<form class="message-form" action="#" metod="post">
+					<p>
+						<label for="message-user-name">Ваше имя:</label>
+						<input class="message-icon-name" id="message-user-name" type="text" name="name" placeholder="Имя Фамилия">
+					</p>
+					<p>
+						<label for="message-user-email">Ваш e-mail:</label>
+						<input class="message-icon-email" id="message-user-email" type="text" name="email" placeholder="email@example.com">
+					</p>
+					<p>
+					<label for="message-user-text">Текст письма:</label>
+						<textarea class="massage-icon-text" id="message-user-text" type="text" name="text" rows="10" placeholder="В свободной форме"></textarea>
+					</p>
+					<button class="button" type="submit">
+						Отправить
+					</button>
+				</form>
+				<button class="modal-close" type="button">
+					Закрыть
+				</button>
 			</section>
 		</main>
 		<footer class="main-footer">
