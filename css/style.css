@@ -13,7 +13,12 @@ body {
 }
 
 a {
+  font-family: "Cuprum", Arial, sans-serif;
   text-decoration: none;
+}
+
+.card {
+  font-family: "PT Sans", Arial, sans-serif;;
 }
 
 .columns {
@@ -118,6 +123,7 @@ a {
 
 .breadcrumbs a,
 .breadcrumbs {
+  font-family: "PT Sans", Arial, sans-serif;;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
