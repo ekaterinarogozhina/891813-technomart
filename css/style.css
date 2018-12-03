@@ -16,6 +16,10 @@ a {
   text-decoration: none;
 }
 
+.columns {
+  font-family: "Cuprum", Arial, sans-serif;
+}
+
 .site-navigation,
 .columns {
   font-size: 17px;
