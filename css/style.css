@@ -150,6 +150,10 @@ a {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
+.catalog-item-price {
+  font-weight: 700;
+}
+
 .catalog-item span {
   font-size: 18px;
   line-height: 20px;
