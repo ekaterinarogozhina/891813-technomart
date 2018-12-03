@@ -44,7 +44,7 @@ a {
 .button-basket:focus,
 .button-basket:active {
   background-color: #161d29;
-  color: #8b8e94;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .site-navigation,
@@ -60,6 +60,11 @@ a {
   color: #ffffff;
   font-size: 24px;
   line-height: 24px;
+  font-family: "Cuprum", Arial, sans-serif;
+}
+
+.number {
+  font-family: "Cuprum", Arial, sans-serif;
 }
 
 .main-header-logo:hover,
@@ -94,6 +99,7 @@ a {
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 .filters ul {
@@ -361,7 +367,7 @@ a {
   font-size: 17px;
   line-height: 18px;
   background-color: #63a63e;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .button-checkout:hover {
@@ -392,6 +398,7 @@ a {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  font-family: "Cuprum", Arial, sans-serif;
 }
 
 .button {
@@ -423,11 +430,16 @@ a {
   color: #ffffff;
   font-size: 30px;
   line-height: 30px;
+  font-family: "Cuprum", Arial, sans-serif;
 }
 
 .modal-message,
 .modal-map {
   display: none;
+}
+
+.main-footer {
+  font-family: "Cuprum", Arial, sans-serif;
 }
 
 .main-footer-nav {
@@ -450,11 +462,16 @@ a {
   color: #ffd180;
 }
 
+.footer-contacts {
+  font-family: "Cuprum", Arial, sans-serif;
+}
+
 .footer-social {
   color: #ffffff;
   background-color: #293449;
   font-size: 16px;
   line-height: 18px;
+  font-family: "Cuprum", Arial, sans-serif;
 }
 
 .footer-social li {
