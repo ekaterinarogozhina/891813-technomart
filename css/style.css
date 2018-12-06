@@ -678,8 +678,33 @@ a {
   justify-content: space-between;
 }
 
+ul.footer-nav {
+  display: flex;
+}
+
+.main-footer-nav li {
+  list-style: none;
+  margin-left: 20px;
+}
+
 .main-footer {
   margin-top: 86px;
+}
+
+.footer-copy {
+  width: 240px;
+}
+
+.social-buttons {
+  width: 160px;
+}
+
+.footer-feedback {
+  width: 140px;
+}
+
+.footer-copyright {
+  width: 140px;
 }
 /*---футер конец почти---*/
 
