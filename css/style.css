@@ -655,11 +655,6 @@ a {
   margin-bottom: 86px;
 }
 
-.container .center {
-  display: flex;
-  justify-content: space-between;
-}
-
 .company {
   margin: 0;
   padding: 0;
