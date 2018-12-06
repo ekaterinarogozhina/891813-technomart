@@ -49,7 +49,6 @@ a {
 
 .site-navigation,
 .user-navigation,
-.main-navigation,
 .user,
 .breadcrumbs {
   list-style: none;
@@ -312,11 +311,11 @@ a {
   color: #a8abaf;
 }
 
-.index-columns {
+.main-header {
   background-color: #f1f5f7;
 }
 
-.index-columns h1 {
+.main-header h1 {
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
@@ -554,4 +553,184 @@ a {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
+}
+
+/* ----- Сеточные стили ----- */
+/*------подсветка-------*/
+* {
+  background: rgba(255, 0, 0, 0.3);
+}
+/*------верхний хедер начало----*/
+.main-header {
+  margin-bottom: 60px;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-header-logo {
+  width: 220px;
+}
+
+.user-navigation {
+  width: 710px;
+}
+
+.columns {
+  width: 100%;
+  margin-bottom: 47px;
+}
+
+.center {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.columns .center {
+  display: flex;
+  justify-content: space-between;
+}
+/*----верхний хедер конец----*/
+/*----средний хедер начало---*/
+.headline {
+  width: 300px;
+}
+
+.header-contacts {
+  width: 300px;
+}
+
+.user {
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.index-columns {
+  margin-bottom: 44px;
+}
+
+.index-columns .center {
+  display: flex;
+  justify-content: space-between;
+}
+/*-----средний хедер конец-----*/
+/*-----нижний хедер начало-----*/
+.nav-bar {
+  margin-bottom: 60px;
+}
+
+.nav-bar .center {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*----нижний хедер конец----*/
+/*----майн начало----*/
+.container {
+  margin-bottom: 86px;
+}
+
+.container .center {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*-----майн конец----*/
+/*----футур начало---*/
+.main-footer-nav .center {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social .center {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-footer {
+  margin-top: 86px;
+}
+/*---футер конец почти---*/
+
+/*---КАТАЛОГ----*/
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 24px;
+}
+
+.catalog-main {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 78px;
+}
+/*--не понятно как отцентровать заголовок--*/
+.filters {
+  width: 220px;
+}
+
+.catalog {
+  width: 700px;
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-item {
+  width: 220px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 52px;
 }
