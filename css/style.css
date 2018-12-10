@@ -608,6 +608,18 @@ input[type="radio"].visually-hidden {
   width: 150px;
 }
 
+.main-header-logo {
+  height: 41px;
+  box-shadow: 0px 6px rgb(181, 41, 51);
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+.site-navigation .active {
+  background-color: #293449;
+}
+
 .button-basket-nav {
   max-width: 150px;
 }
@@ -626,6 +638,8 @@ input[type="radio"].visually-hidden {
 .user-navigation {
   display: flex;
   width: 710px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .user-navigation input {
