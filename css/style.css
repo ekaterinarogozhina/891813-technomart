@@ -339,6 +339,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header h1 {
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
