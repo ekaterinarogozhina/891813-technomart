@@ -17,6 +17,29 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .card {
   font-family: "PT Sans", Arial, sans-serif;;
 }
@@ -557,9 +580,9 @@ a {
 
 /* ----- Сеточные стили ----- */
 /*------подсветка-------*/
-* {
+/** {
   background: rgba(255, 0, 0, 0.3);
-}
+}*/
 /*------верхний хедер начало----*/
 .main-header {
   margin-bottom: 60px;
@@ -578,6 +601,17 @@ a {
   list-style: none;
 }
 
+.user-navigation a {
+  display: block;
+  padding: 8px 22px;
+  margin: 0;
+  width: 150px;
+}
+
+.button-basket-nav {
+  max-width: 150px;
+}
+
 .site-navigation {
   margin: 0;
   padding: 0;
@@ -590,7 +624,12 @@ a {
 }
 
 .user-navigation {
+  display: flex;
   width: 710px;
+}
+
+.user-navigation input {
+  width: 270px;
 }
 
 .columns {
@@ -649,6 +688,18 @@ a {
   padding: 0;
   list-style: none;
 }
+
+.site-navigation a {
+  display: block;
+  padding: 12.5px 30px;
+  vertical-align: middle;
+}
+
+ul.site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  width: 940px;
+}
 /*----нижний хедер конец----*/
 /*----майн начало----*/
 .container {
@@ -682,6 +733,10 @@ ul.footer-nav {
   display: flex;
 }
 
+ul.footer-site-nav {
+  display: flex;
+}
+
 .main-footer-nav li {
   list-style: none;
   margin-left: 20px;
@@ -706,6 +761,10 @@ ul.footer-nav {
 .footer-copyright {
   width: 140px;
 }
+
+ul.social-icon {
+  display: flex;
+}
 /*---футер конец почти---*/
 
 /*---КАТАЛОГ----*/
@@ -722,7 +781,7 @@ ul.footer-nav {
   padding: 0;
   margin-bottom: 78px;
 }
-/*--не понятно как отцентровать заголовок--*/
+
 .filters {
   width: 220px;
 }
