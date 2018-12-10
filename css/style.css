@@ -627,6 +627,7 @@ input[type="radio"].visually-hidden {
 .site-navigation {
   margin: 0;
   padding: 0;
+  box-shadow: 0px 6px rgb(41, 52, 73);
 
   list-style: none;
 }
