@@ -552,6 +552,7 @@ input[type="radio"].visually-hidden {
 
 .user-navigation a {
   display: block;
+  justify-content: space-between;
   padding: 8px 22px;
   margin: 0;
   vertical-align: middle;
@@ -593,9 +594,12 @@ input[type="radio"].visually-hidden {
 }
 
 .button-basket-nav:hover::before,
-.button-basket-nav:focus::before,
-.button-basket-nav:active::before {
+.button-basket-nav:focus::before {
   opacity: 1;
+}
+
+.button-basket-nav:active::before {
+  opacity: 0.3;
 }
 
 .site-navigation {
