@@ -319,6 +319,7 @@ input[type="radio"].visually-hidden {
 .button-basket-nav {
   background-color: #ee3643;
   color: #ffffff;
+  margin-left: auto;
 }
 
 .button-basket-nav:hover {
@@ -554,7 +555,6 @@ input[type="radio"].visually-hidden {
   display: block;
   justify-content: space-between;
   padding: 8px 22px;
-  margin: 0;
   vertical-align: middle;
   max-width: 150px;
 }
