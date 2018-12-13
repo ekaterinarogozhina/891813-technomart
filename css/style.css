@@ -593,16 +593,16 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
+.user-navigation a:hover::before {
+  opacity: 1;
+}
+
 .user-navigation a:active span {
   opacity: 0.6;
 }
 
 .user-navigation a:active::before {
   opacity: 0.5;
-}
-
-.user-navigation a:hover::before {
-  opacity: 1;
 }
 
 .site-navigation {
