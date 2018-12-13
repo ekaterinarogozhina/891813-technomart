@@ -574,9 +574,6 @@ input[type="radio"].visually-hidden {
 
   padding-left: 50px;
   position: relative;
-
-  background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
 
 .button-basket-nav::before {
@@ -585,14 +582,20 @@ input[type="radio"].visually-hidden {
   top: 12px;
   left: 18px;
 
-  background-image: url("img/icon-cart.svg");
+  background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 
   width: 16px;
   height: 18px;
-  
-  background-color: #ff0000;
+
+  opacity: 0.3;
+}
+
+.button-basket-nav:hover::before,
+.button-basket-nav:focus::before,
+.button-basket-nav:active::before {
+  opacity: 1;
 }
 
 .site-navigation {
