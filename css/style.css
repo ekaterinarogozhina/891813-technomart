@@ -547,10 +547,10 @@ input[type="radio"].visually-hidden {
 
 .user-navigation a {
   display: block;
-  justify-content: space-between;
+  box-sizing: border-box;
   padding: 11px 22px;
   vertical-align: middle;
-  max-width: 150px;
+  min-width: 150px;
 }
 
 .main-header-logo {
@@ -660,6 +660,7 @@ input[type="radio"].visually-hidden {
   width: 720px;
   margin-top: 0;
   margin-bottom: 0;
+  justify-content: space-between;
 }
 
 .user-navigation input {
@@ -683,7 +684,7 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation input:hover + svg {
-  opacity: 1;
+  fill: #ffffff;
 }
 
 .user-navigation input:focus + svg {
