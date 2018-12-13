@@ -159,7 +159,7 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.catalog-list {
+.catalog-items {
   list-style: none;
 }
 
@@ -172,71 +172,12 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-.catalog-item-price {
-  font-weight: 700;
-}
-
-.catalog-item span {
-  font-size: 18px;
-  line-height: 20px;
-  color: #000000;
-}
-
 .catalog .button {
   font-size: 17px;
   line-height: 18px;
   text-align: center;
   background-color: #ee3643;
   color: #ffffff;
-}
-
-.old-price {
-  font-size: 17px;
-  line-height: 18px;
-  text-align: center;
-  text-decoration: line-through;
-  color: #999999;
-}
-
-.buy {
-  background-color: #63a63e;
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 18px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.buy:hover{
-  background-color: #5fbb2d;
-  color: #ffffff;
-}
-
-.buy:focus,
-.buy:active {
-  background-color: #518534;
-  color: #ffffff;
-}
-
-.bookmarks {
-  background-color: #ffffff;
-  border: 2px solid #63a63e;
-  border-width: 2px;
-  color: #32425c;
-  font-size: 14px;
-  line-height: 18px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.bookmarks:hover {
-  border-color: #32425c;
-}
-
-.bookmarks:focus,
-.bookmarks:active {
-  border-color: #c1c6ce;
-  color: #c1c6ce;
 }
 
 .entry,
@@ -459,6 +400,12 @@ input[type="radio"].visually-hidden {
   font-size: 30px;
   line-height: 30px;
   font-family: "Cuprum", Arial, sans-serif;
+  box-shadow: 0px 5px rgb(181, 41, 51);
+  box-sizing: border-box;
+  height: 63px;
+  width: 220px;
+  text-align: center;
+  padding-top: 18px;
 }
 
 .modal-message,
@@ -613,7 +560,7 @@ input[type="radio"].visually-hidden {
 
 .main-header-logo {
   height: 41px;
-  box-shadow: 0px 6px rgb(181, 41, 51);
+  box-shadow: 0px 5px rgb(181, 41, 51);
   text-align: center;
   padding-top: 10px;
   box-sizing: border-box;
@@ -742,7 +689,9 @@ ul.site-navigation {
 /*----нижний хедер конец----*/
 /*----майн начало----*/
 .container {
-  margin-bottom: 86px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 413px;
 }
 
 .company {
@@ -825,30 +774,161 @@ ul.social-icon {
   width: 220px;
 }
 
-.catalog {
-  width: 700px;
-}
 
-.catalog-columns {
-  display: flex;
-  justify-content: space-between;
+/*----каталог-карточки-товара----*/
+
+.catalog-items {
+  width: 700px;
+  margin: 20px auto;
 }
 
 .catalog-item {
-  width: 220px;
-  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  width: 218px;
   margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  line-height: 20px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .catalog-item:nth-child(3n) {
   margin-right: 0;
 }
 
-.catalog-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  margin-bottom: 52px;
+.catalog-items {
+  font-size: 0;
 }
+.catalog-item {
+  font-size: 16px;
+}
+
+.catalog-item .flag {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 60px;
+  height: 60px;
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.catalog-item .flag-new {
+  background: url("img/new-flag.png") no-repeat 0 0;
+}
+
+.catalog-item .actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 218px;
+  height: 88px;
+  padding: 40px 0;
+  background-color: rgba(255,255,255,0.9);
+  z-index: 10;
+}
+
+.catalog-item .actions .buy,
+.catalog-item .actions .bookmark {
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315; 
+  background-color: #63a63e;
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Cuprum", sans-serif;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.catalog-item .actions .bookmark {
+  color: #32425c;
+  background: white;
+  border-bottom-color: #63a63e;
+}
+
+.catalog-item .actions {
+  display: none;
+}
+
+.catalog-item:hover .actions {
+  display: block;
+}
+
+.actions .buy:hover {
+  background-color: #5fbb2d;
+  color: #ffffff;
+}
+
+.actions .buy:focus,
+.actions .buy:active {
+  background-color: #518534;
+  color: #ffffff;
+}
+
+.actions .bookmark:hover {
+  border-color: #32425c;
+}
+
+.actions .bookmark:focus,
+.actions .bookmark:active {
+  border-color: #c1c6ce;
+  color: #c1c6ce;
+}
+
+.catalog-item .image {
+  width: 218px;
+  height: 168px;
+}
+
+.catalog-item .image img {
+  max-width: 100%;
+}
+
+.catalog-item .title {
+  min-height: 40px;
+  padding: 0 25px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.catalog-item .discount {
+  min-height: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.catalog-item .price {
+  position: relative;
+  width: 80px;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  padding: 10px 30px;
+  color: white;
+  background: #ee3643;
+  border-radius: 3px;
+}
+
+.catalog-item .price:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border: 20px solid white;
+  border-left-color: #ee3643;
+}
+
