@@ -666,27 +666,28 @@ input[type="radio"].visually-hidden {
   width: 270px;
   box-sizing: border-box;
   padding-left: 50px;
-
+  height: 42px;
 }
 
-.user-navigation input::before {
-  content: "";
+.search-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.search-wrapper svg {
   position: absolute;
-  top: 12px;
-  left: 18px;
+  top: 10px;
+  left: 20px;
+  fill: rgba(255, 255, 255, 0.3);
 
-  background-image: url("../img/icon-search.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-
-  width: 16px;
-  height: 18px;
-
-  opacity: 0.3;
 }
 
-.user-navigation input:focus::before {
-  color: #ee3643;
+.user-navigation input:hover + svg {
+  opacity: 1;
+}
+
+.user-navigation input:focus + svg {
+  fill: #ee3643;
 }
 
 .columns {
