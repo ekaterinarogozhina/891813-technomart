@@ -554,7 +554,7 @@ input[type="radio"].visually-hidden {
 .user-navigation a {
   display: block;
   justify-content: space-between;
-  padding: 8px 22px;
+  padding: 11px 22px;
   vertical-align: middle;
   max-width: 150px;
 }
@@ -593,13 +593,16 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
-.button-basket-nav:hover::before,
-.button-basket-nav:focus::before {
-  opacity: 1;
+.user-navigation a:active span {
+  opacity: 0.6;
 }
 
-.button-basket-nav:active::before {
-  opacity: 0.3;
+.user-navigation a:active::before {
+  opacity: 0.5;
+}
+
+.user-navigation a:hover::before {
+  opacity: 1;
 }
 
 .site-navigation {
