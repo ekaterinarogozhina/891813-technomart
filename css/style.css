@@ -548,7 +548,7 @@ input[type="radio"].visually-hidden {
 .user-navigation a {
   display: block;
   box-sizing: border-box;
-  padding: 11px 22px;
+  padding: 11px 20px;
   vertical-align: middle;
   min-width: 150px;
 }
@@ -567,7 +567,7 @@ input[type="radio"].visually-hidden {
 
 .user-navigation .button-bookmarks {
 
-  padding-left: 50px;
+  padding-left: 44px;
   position: relative;
 }
 
@@ -677,8 +677,8 @@ input[type="radio"].visually-hidden {
 
 .search-wrapper svg {
   position: absolute;
-  top: 10px;
-  left: 20px;
+  top: 11px;
+  left: 17px;
   fill: rgba(255, 255, 255, 0.3);
 
 }
@@ -763,6 +763,7 @@ ul.site-navigation {
 /*----майн начало----*/
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-bottom: 413px;
 }
@@ -850,9 +851,13 @@ ul.social-icon {
 
 /*----каталог-карточки-товара----*/
 
+.goods-wrap {
+  display: flex;
+  margin: 20px auto;
+}
+
 .catalog-items {
   width: 700px;
-  margin: 20px auto;
 }
 
 .catalog-item {
@@ -1005,3 +1010,8 @@ ul.social-icon {
   border-left-color: #ee3643;
 }
 
+.catalog-item__empty .actions {
+  display: block;
+  position: static;
+  padding-top: 70px;
+}
