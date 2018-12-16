@@ -867,7 +867,7 @@ ul.social-icon {
   line-height: 20px;
   font-weight: bold;
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   background-color: #ffffff;
 }
 
@@ -976,7 +976,7 @@ ul.social-icon {
 
 .catalog-item .title {
   min-height: 40px;
-  padding: 0 25px;
+  padding: 0 18px;
   margin-top: 10px;
   margin-bottom: 15px;
 }
@@ -999,6 +999,7 @@ ul.social-icon {
   background: #ee3643;
   border-radius: 3px;
   margin-top: auto;
+  font-size: 16px;
 }
 
 .catalog-item .price:after {
