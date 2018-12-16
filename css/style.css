@@ -163,11 +163,6 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.catalog-item {
-  background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 .catalog-item:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
@@ -858,18 +853,22 @@ ul.social-icon {
 
 .catalog-items {
   width: 700px;
+  margin: 20px auto;
 }
 
 .catalog-item {
   position: relative;
-  display: inline-block;
-  width: 218px;
-  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  margin-right: 17px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
   line-height: 20px;
   font-weight: bold;
   text-align: center;
+  font-size: 16px;
+  background-color: #ffffff;
 }
 
 .catalog-item:nth-child(3n) {
@@ -878,31 +877,33 @@ ul.social-icon {
 
 .catalog-items {
   font-size: 0;
-}
-.catalog-item {
-  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.catalog-item .flag {
+.catalog-item__new::before {
   position: absolute;
-  top: -1px;
-  right: -1px;
-  width: 60px;
+  content: "new";
+  top: -68px;
+  right: -53px;
+  width: 30px;
   height: 60px;
-  text-indent: -1000px;
-  overflow: hidden;
-  z-index: 20;
-}
-
-.catalog-item .flag-new {
-  background: url("img/new-flag.png") no-repeat 0 0;
+  color: #ffffff;
+  font-weight: 100;
+  border: 27px solid #ee3643;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  transform: rotate(45deg);
+  line-height: 146px;
+  font-size: 13px;
 }
 
 .catalog-item .actions {
   position: absolute;
   top: 0;
   left: 0;
-  width: 218px;
+  width: 220px;
   height: 88px;
   padding: 40px 0;
   background-color: rgba(255,255,255,0.9);
@@ -965,7 +966,7 @@ ul.social-icon {
 }
 
 .catalog-item .image {
-  width: 218px;
+  width: 220px;
   height: 168px;
 }
 
@@ -997,6 +998,7 @@ ul.social-icon {
   color: white;
   background: #ee3643;
   border-radius: 3px;
+  margin-top: auto;
 }
 
 .catalog-item .price:after {
@@ -1008,10 +1010,4 @@ ul.social-icon {
   height: 0;
   border: 20px solid white;
   border-left-color: #ee3643;
-}
-
-.catalog-item__empty .actions {
-  display: block;
-  position: static;
-  padding-top: 70px;
 }
