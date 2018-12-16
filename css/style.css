@@ -72,8 +72,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation,
 .user-navigation,
-.user,
-.breadcrumbs {
+.user {
   list-style: none;
 }
 
@@ -827,10 +826,18 @@ ul.social-icon {
 /*---КАТАЛОГ----*/
 
 .breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
   margin-bottom: 24px;
+}
+
+.breadcrumbs li {
+  position: relative;
+  margin-right: 42px;
 }
 
 .catalog-main {
