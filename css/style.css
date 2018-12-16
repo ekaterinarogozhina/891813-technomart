@@ -849,6 +849,7 @@ ul.social-icon {
 .goods-wrap {
   display: flex;
   margin: 20px auto;
+
 }
 
 .catalog-items {
@@ -978,22 +979,24 @@ ul.social-icon {
   min-height: 40px;
   padding: 0 18px;
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 11px;
 }
 
 .catalog-item .discount {
   min-height: 20px;
-  margin-top: 15px;
-  margin-bottom: 10px;
+  margin-top: auto;
+  margin-bottom: 9px;
   color: #999;
   text-decoration: line-through;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 .catalog-item .price {
   position: relative;
   width: 80px;
   margin: 10px auto;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   padding: 10px 30px;
   color: white;
   background: #ee3643;
