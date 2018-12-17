@@ -264,6 +264,18 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
+.breadcrumbs a::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 12px;
+  right: -25px;
+  top: 1px;
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .catalog-items {
   list-style: none;
 }
