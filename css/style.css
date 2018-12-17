@@ -259,9 +259,14 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width: 14px;
   height: 12px;
+  top: 1px;
   background-image: url("../img/icon-home.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.breadcrumbs-catalog {
+  margin-left: 13px;
 }
 
 .breadcrumbs a::after {
@@ -269,7 +274,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width: 7px;
   height: 12px;
-  right: -25px;
+  right: -22px;
   top: 1px;
   background-image: url("../img/icon-right-small.svg");
   background-repeat: no-repeat;
@@ -977,8 +982,7 @@ ul.social-icon {
 .goods-wrap {
   display: flex;
   justify-content: space-between;
-  margin: 20px auto;
-  width: 930px;
+  padding-top: 20px;
 }
 
 .catalog-items {
@@ -1009,6 +1013,7 @@ ul.social-icon {
   font-size: 0;
   display: flex;
   flex-wrap: wrap;
+  margin-left: 20px;
 }
 
 .catalog-item__new::before {
