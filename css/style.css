@@ -254,6 +254,16 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+.breadcrumbs .home {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 12px;
+  background-image: url("../img/icon-home.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .catalog-items {
   list-style: none;
 }
