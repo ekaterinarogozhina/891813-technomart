@@ -173,7 +173,7 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
-.filter-checkbox:checked + label::after {
+.filter-checkbox:checked + label::before {
   content: "";
 
   position: absolute;
@@ -238,7 +238,7 @@ input[type="radio"].visually-hidden {
 .filter-radio:hover + label::before,
 .filter-checkbox:focus + label::before,
 .filter-radio:focus + label::before, {
-  color: #b5b5b5;
+  border: #b5b5b5;
 }
 
 .breadcrumbs a,
