@@ -234,11 +234,11 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
 }
 
-.filter-checkbox:hover + label::before,
 .filter-radio:hover + label::before,
-.filter-checkbox:focus + label::before,
-.filter-radio:focus + label::before, {
-  border: #b5b5b5;
+.filter-radio:focus + label::before,
+.filter-radio:checked:hover + label::after,
+.filter-radio:checked:focus + label::after {
+  border-color: #b5b5b5;
 }
 
 .breadcrumbs a,
