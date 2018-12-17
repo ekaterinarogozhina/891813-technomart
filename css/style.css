@@ -188,8 +188,22 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
-.filter-checkbox:disabled + label {
+.filter-checkbox:disabled + label span,
+.filter-radio:disabled + label span {
   opacity: 0.4;
+}
+
+.filter-checkbox:disabled + label::before,
+.filter-radio:disabled + label::before {
+  opacity: 0.3;
+}
+
+.filter-checkbox:hover + label::before {
+  background-image: url("../img/checkbox-off-active.svg");
+}
+
+.filter-checkbox:checked:hover + label::before {
+  background-image: url("../img/checkbox-on-active.svg");
 }
 
 .filter-radio + label::before {
@@ -218,6 +232,13 @@ input[type="radio"].visually-hidden {
 
   background-color: #c5c5c5;
   border-radius: 50%;
+}
+
+.filter-checkbox:hover + label::before,
+.filter-radio:hover + label::before,
+.filter-checkbox:focus + label::before,
+.filter-radio:focus + label::before, {
+  color: #b5b5b5;
 }
 
 .breadcrumbs a,
