@@ -318,11 +318,23 @@ input[type="radio"].visually-hidden {
 
 .order,
 .office {
+  position: relative;
   font-size: 16px;
   line-height: 18px;
   color: #32425c;
   background-color: #f1f5f7;
   text-decoration: underline;
+}
+
+.order__point::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: #32425c;
+  border-radius: 50%;
+  top: 7px;
+  right: -19px;
 }
 
 .order:hover,
@@ -350,16 +362,18 @@ input[type="radio"].visually-hidden {
   color: #000000;
   background-color: #ffffff;
   position: relative;
+  padding-left: 48px;
+  top: -1px;
 }
 
-.user a {
+.user .name-user {
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 44px;
+  margin-bottom: -9px;
 }
 
-.name-user::after {
+.name-user::before {
   content: "";
   position: absolute;
   width: 20px;
@@ -370,7 +384,15 @@ input[type="radio"].visually-hidden {
   background position: 0 0;
 }
 
-.name-user::before {
+.name-user:hover::before {
+  background-image: url("../img/icon-user-hover.svg");
+}
+
+.name-user:active::before {
+  background-image: url("../img/icon-user.svg");
+}
+
+.name-user::after {
   content: "";
   position: absolute;
   width: 20px;
@@ -379,6 +401,14 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/icon-logout.svg");
   background-repeat: no-repeat;
   background position: 0 0;
+}
+
+.name-user:hover::after {
+  background-image: url("../img/icon-logout-hover.svg");
+}
+
+.name-user:active::after {
+  background-image: url("../img/icon-logout.svg");
 }
 
 .icon {
@@ -698,7 +728,7 @@ input[type="radio"].visually-hidden {
 }*/
 /*------верхний хедер начало----*/
 .main-header {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .main-nav {
@@ -872,6 +902,11 @@ input[type="radio"].visually-hidden {
   width: 270px;
 }
 
+.header-contacts-catalog {
+  width: 270px;
+  margin-left: 15px;
+}
+
 .user {
   display: inline-block;
   width: 300px;
@@ -884,7 +919,8 @@ input[type="radio"].visually-hidden {
 .user-cabinet {
   display: flex;
   justify-content: space-between;
-  width: 212px;
+  width: 209px;
+  padding-left: 18px;
 }
 
 .user-cabinet li {
@@ -930,13 +966,10 @@ input[type="radio"].visually-hidden {
 
   width: 20px;
   height: 19px;
-
-  
 }
 
 .user__button .entry:hover::after {
   background-image: url("../img/icon-login-hover.svg");
-  
 }
 
 .user__button .entry:active::after {
