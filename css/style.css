@@ -843,12 +843,31 @@ input[type="radio"].visually-hidden {
 }
 
 .user {
-  display: flex;
-  justify-content: space-between;
-  width: 282px;
+  display: inline-block;
+  width: 300px;
   height: 45px;
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+.user input {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  width: 300px;
+  height: 44px;
+  border: none;
+}
+
+.user-cabinet {
+  display: flex;
+  justify-content: space-between;
+  width: 212px;
+}
+
+.user-cabinet li {
   list-style: none;
 }
 
