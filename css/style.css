@@ -349,9 +349,36 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
-  text-align: center;
-  width: 300px;
+  position: relative;
+}
+
+.user a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 44px;
+}
+
+.name-user::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  left: 15px;
+  background-image: url("../img/icon-user.svg");
+  background-repeat: no-repeat;
+  background position: 0 0;
+}
+
+.name-user::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  right: 11px;
+  background-image: url("../img/icon-logout.svg");
+  background-repeat: no-repeat;
+  background position: 0 0;
 }
 
 .icon {
