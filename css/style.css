@@ -871,6 +871,15 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.user-index {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 282px;
+}
+
 .user__button {
   background-color: #ffffff;
   display: flex;
@@ -972,6 +981,11 @@ ul.site-navigation {
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 413px;
+}
+
+.company-contacts {
+  display: flex;
+  justify-content: space-between;
 }
 
 .company {
