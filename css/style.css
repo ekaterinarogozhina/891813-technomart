@@ -934,6 +934,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   width: 209px;
   padding-left: 18px;
+  margin-top: 5px;
 }
 
 .user-cabinet li {
