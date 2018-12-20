@@ -357,17 +357,15 @@ input[type="radio"].visually-hidden {
 }
 
 .name-user {
+  display: flex;
+  align-items: center;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
   position: relative;
   padding-left: 48px;
-  top: -1px;
-}
-
-.user .name-user {
-  align-items: center;
-  height: 44px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .name-user::before {
@@ -399,8 +397,8 @@ input[type="radio"].visually-hidden {
 .white-rectangle .logout {
   width: 20px;
   height: 18px;
-  right: 11px;
-  top: 13px;
+  margin-left: 35px;
+  margin-top: 14px;
   background-image: url("../img/icon-logout.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
