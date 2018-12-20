@@ -398,7 +398,7 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-.white-rectangle .logout::after {
+.white-rectangle .logout {
   content: "";
   position: absolute;
   width: 20px;
@@ -410,11 +410,11 @@ input[type="radio"].visually-hidden {
   background position: 0 0;
 }
 
-.logout:hover::after {
+.logout:hover {
   background-image: url("../img/icon-logout-hover.svg");
 }
 
-.logout:active::after {
+.logout:active {
   background-image: url("../img/icon-logout.svg");
 }
 
