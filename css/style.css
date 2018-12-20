@@ -608,9 +608,12 @@ input[type="radio"].visually-hidden {
   padding-top: 18px;
 }
 
-.modal-message,
-.modal-map {
+.modal-message {
   display: none;
+}
+
+.modal-map {
+
 }
 
 .main-footer {
@@ -1010,8 +1013,6 @@ input[type="radio"].visually-hidden {
 .nav-bar {
   width: 940px;
   height: 54px;
-  background-color: #32425c;
-  border-bottom: 5px solid #293449;
   margin-bottom: 60px;
   display: flex;
   justify-content: center;
@@ -1042,6 +1043,8 @@ input[type="radio"].visually-hidden {
   align-items: center;
   padding: 0 25px;
   margin: 0 auto;
+  background-color: #32425c;
+  border-bottom: 5px solid #293449;
 }
 /*----нижний хедер конец----*/
 /*----майн начало----*/
