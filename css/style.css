@@ -366,10 +366,8 @@ input[type="radio"].visually-hidden {
 }
 
 .user .name-user {
-  display: flex;
   align-items: center;
   height: 44px;
-  margin-bottom: -9px;
 }
 
 .name-user::before {
@@ -399,15 +397,13 @@ input[type="radio"].visually-hidden {
 }
 
 .white-rectangle .logout {
-  content: "";
-  position: absolute;
   width: 20px;
   height: 18px;
   right: 11px;
   top: 13px;
   background-image: url("../img/icon-logout.svg");
   background-repeat: no-repeat;
-  background position: 0 0;
+  background-position: 0 0;
 }
 
 .logout:hover {
