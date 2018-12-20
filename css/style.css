@@ -1067,6 +1067,20 @@ ul.site-navigation {
   border-radius: 3px;
 }
 
+.company-work li {
+  position: relative;
+}
+
+.company-work li::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
+  left: -35px;
+  top: 10px;
+}
+
 .contacts {
   margin: 0;
   padding: 0;
