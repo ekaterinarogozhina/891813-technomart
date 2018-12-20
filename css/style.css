@@ -392,12 +392,19 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/icon-user.svg");
 }
 
-.name-user::after {
+.white-rectangle {
+  display: inline-block;
+  position: relative;
+  width: 300px;
+}
+
+.white-rectangle .logout::after {
   content: "";
   position: absolute;
   width: 20px;
   height: 18px;
   right: 11px;
+  top: 13px;
   background-image: url("../img/icon-logout.svg");
   background-repeat: no-repeat;
   background position: 0 0;
