@@ -410,11 +410,11 @@ input[type="radio"].visually-hidden {
   background position: 0 0;
 }
 
-.name-user:hover::after {
+.logout:hover::after {
   background-image: url("../img/icon-logout-hover.svg");
 }
 
-.name-user:active::after {
+.logout:active::after {
   background-image: url("../img/icon-logout.svg");
 }
 
