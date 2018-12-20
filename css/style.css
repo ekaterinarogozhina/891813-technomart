@@ -360,7 +360,6 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
-  background-color: #ffffff;
   position: relative;
   padding-left: 48px;
   top: -1px;
@@ -393,9 +392,10 @@ input[type="radio"].visually-hidden {
 }
 
 .white-rectangle {
-  display: inline-block;
+  display: flex;
   position: relative;
   width: 300px;
+  background-color: #ffffff;
 }
 
 .white-rectangle .logout::after {
@@ -416,6 +416,12 @@ input[type="radio"].visually-hidden {
 
 .logout:active::after {
   background-image: url("../img/icon-logout.svg");
+}
+
+.logout {
+  display: block;
+  width: 43px;
+  height: 44px;
 }
 
 .icon {
