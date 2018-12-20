@@ -395,13 +395,12 @@ input[type="radio"].visually-hidden {
 }
 
 .white-rectangle .logout {
-  width: 20px;
-  height: 18px;
-  margin-left: 35px;
-  margin-top: 14px;
+  width: 44px;
+  height: 44px;
+  margin-left: 22px;
   background-image: url("../img/icon-logout.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center;
 }
 
 .logout:hover {
