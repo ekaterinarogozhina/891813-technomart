@@ -118,7 +118,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filters fieldset:nth-child(2) {
-  margin-bottom: 76px;
+  margin-bottom: 57px;
 }
 
 .filters legend {
@@ -645,6 +645,7 @@ input[type="radio"].visually-hidden {
 
 .footer-social li {
   list-style: none;
+  border-radius: 50%;
 }
 
 .footer-social .button {
@@ -678,7 +679,13 @@ input[type="radio"].visually-hidden {
 }
 
 .social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 41px;
+  height: 41px;
   background-color: #212a3a;
+  border-radius: 50%;
 }
 
 .social-button:hover,
@@ -1054,6 +1061,12 @@ ul.site-navigation {
   width: 514px;
 }
 
+.company .button {
+  display: inline-block;
+  padding: 10px 40px;
+  border-radius: 3px;
+}
+
 .contacts {
   margin: 0;
   padding: 0;
@@ -1063,6 +1076,15 @@ ul.site-navigation {
 
 .contacts p {
   margin-bottom: 30px;
+}
+
+.contacts .button {
+  display: inline-block;
+  padding-left: 64px;
+  padding-right: 59px;
+  padding-top: 11px;
+  padding-bottom: 10px;
+  border-radius: 3px;
 }
 /*-----майн конец----*/
 /*----футур начало---*/
@@ -1097,10 +1119,6 @@ ul.footer-site-nav {
   width: 240px;
 }
 
-.social-buttons {
-  width: 160px;
-}
-
 .footer-feedback {
   width: 140px;
 }
@@ -1109,8 +1127,14 @@ ul.footer-site-nav {
   width: 140px;
 }
 
-ul.social-icon {
+.social-buttons ul {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 131px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
 }
 /*---футер конец почти---*/
 
@@ -1141,8 +1165,32 @@ ul.social-icon {
   width: 220px;
 }
 
-.catalog-columns {
+.filters .button {
+  font-size: 13px;
+  width: 140px;
+  height: 38px;
+  background-color: white;
+  color: black;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  outline: none;
+}
 
+.filters .button:hover,
+.filters .button:focus {
+  background-color: white;
+  color: black;
+  border-color: #bdc6ca;
+}
+
+.filters .button:active {
+  background-color: white;
+  color: black;
+  border-color: #ee3643;
+}
+
+.producer-name {
+  border-bottom: 1px solid #e5e5e5;
 }
 
 /*----каталог-карточки-товара----*/
