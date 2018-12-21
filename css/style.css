@@ -1403,11 +1403,11 @@ ul.footer-site-nav {
 }
 
 .modal-message {
-  bottom: 120px;
+  bottom: 92px;
   left: 50%;
-  margin-left: -380px;
+  margin-left: -310px;
 
-  width: 620px;
+  width: 460px;
   padding-left: 80px;
   padding-right: 80px;
   padding-top: 48px;
@@ -1452,7 +1452,9 @@ background-color: transparent;
   transform: rotate(-45deg);
 }
 
-.message p {
+.message div {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-bottom: 20px;
 }
