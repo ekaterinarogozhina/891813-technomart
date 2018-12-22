@@ -1588,11 +1588,16 @@ background-color: transparent;
 }
 
 .send-catalog a {
+  display: block;
+  box-sizing: border-box;
+  vertical-align: middle;
+  padding-top: 10px;
   width: 220px;
   height: 38px;
   margin-right: 22px;
   font-size: 14px;
   line-height: 18px;
+  border-radius: 3px;
 }
 
 .send-catalog button {
