@@ -1411,8 +1411,8 @@ ul.footer-site-nav {
 
 .modal-close {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 8px;
+  right: 13px;
 
   width: 21px;
   height: 21px;
@@ -1472,12 +1472,12 @@ background-color: transparent;
 }
 
 .message textarea[type="text"] {
+  box-sizing: border-box;
   padding-left: 13px;
   padding-top: 8px;
   font: inherit;
   font-size: 13px;
   line-height: 18px;
-
 }
 
 .message .button {
@@ -1494,6 +1494,7 @@ background-color: transparent;
   border: 2px solid #dee3e4;
   border-radius: 3px;
   color: #a9a9a9;
+  min-height: 115px;
 }
 
 .message .send {
@@ -1522,6 +1523,13 @@ background-color: transparent;
   width: 460px;
   padding-left: 80px;
   padding-right: 80px;
-  padding-top: 48px;
+  padding-top: 46px;
   padding-bottom: 16px;
+}
+
+.message label {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  padding-bottom: 10px;
 }
