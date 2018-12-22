@@ -1471,6 +1471,15 @@ background-color: transparent;
   border-radius: 3px;
 }
 
+.message textarea[type="text"] {
+  padding-left: 13px;
+  padding-top: 8px;
+  font: inherit;
+  font-size: 13px;
+  line-height: 18px;
+
+}
+
 .message .button {
   width: 100%;
   margin-right: 0;
@@ -1484,6 +1493,7 @@ background-color: transparent;
   resize: none;
   border: 2px solid #dee3e4;
   border-radius: 3px;
+  color: #a9a9a9;
 }
 
 .message .send {
