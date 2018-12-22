@@ -85,22 +85,25 @@
       </section>
       <div class="modal modal-message">
         <form class="message" action="#" metod="post">
-          <div>
-            <label for="message-user-name">Ваше имя:</label>
-            <input class="message-icon-name" id="message-user-name" type="text" name="name" placeholder="Имя Фамилия">
+          <div class="wrap">
+            <div class="message-name">
+              <label for="message-user-name">Ваше имя:</label>
+              <input class="message-icon-name" id="message-user-name" type="text" name="name" placeholder="Имя Фамилия">
+            </div>
+            <div class="message-name">
+              <label for="message-user-email">Ваш e-mail:</label>
+              <input class="message-icon-email" id="message-user-email" type="text" name="email" placeholder="email@example.com">
+            </div>
+            <div class="message-text">
+              <label for="message-user-text">Текст письма:</label>
+              <textarea class="massage-icon-text" id="message-user-text" type="text" name="text" rows="7" placeholder="В свободной форме"></textarea>
+            </div>
           </div>
-          <div>
-            <label for="message-user-email">Ваш e-mail:</label>
-            <input class="message-icon-email" id="message-user-email" type="text" name="email" placeholder="email@example.com">
+          <div class="send">
+            <button class="button" type="submit">
+              Отправить
+            </button>
           </div>
-          <div>
-            <label for="message-user-text">Текст письма:</label>
-            <textarea class="massage-icon-text" id="message-user-text" type="text" name="text" rows="10" placeholder="В свободной форме"></textarea>
-          </div>
-        
-        <button class="button" type="submit">
-          Отправить
-        </button>
         </form>
         <button class="modal-close" type="button">
           Закрыть
