@@ -1609,4 +1609,6 @@ background-color: transparent;
   line-height: 18px;
   outline: none;
   border-radius: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
