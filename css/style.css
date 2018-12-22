@@ -1387,7 +1387,7 @@ ul.footer-site-nav {
 /*----всплывающие окна----*/
 
 .modal-message {
-  display: non;
+  display: none;
 }
 
 .modal-map {
@@ -1490,7 +1490,7 @@ background-color: transparent;
 }
 
 .message-text textarea {
-  resize: none;
+  resize: vertical;
   border: 2px solid #dee3e4;
   border-radius: 3px;
   color: #a9a9a9;
@@ -1532,4 +1532,8 @@ background-color: transparent;
   font-size: 18px;
   line-height: 18px;
   padding-bottom: 10px;
+}
+
+.modal-on {
+  display: block;
 }
