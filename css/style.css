@@ -376,7 +376,7 @@ input[type="radio"].visually-hidden {
   left: 15px;
   background-image: url("../img/icon-user.svg");
   background-repeat: no-repeat;
-  background position: 0 0;
+  background-position: 0 0;
 }
 
 .name-user:hover::before {
@@ -1116,11 +1116,11 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
 }
 
-ul.footer-nav {
+.footer-nav {
   display: flex;
 }
 
-ul.footer-site-nav {
+.footer-site-nav {
   display: flex;
 }
 
